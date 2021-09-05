@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/815a8cfff1.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../css/estilo.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <title>Friki Discos - Contacto</title>
+    </head>
+<body>
+    <div class="grilla__contacto">
+        <nav class="navegador navegador__contacto">
+            <ul class="barraNavegacion">
+                <li class="barraNavegacion__item"><a href="catalogo.html">CATÁLOGO</a></li>
+                <li class="barraNavegacion__item"><a href="comocomprar.html">CÓMO<br>COMPRAR</a></li>
+                <li class="barraNavegacion__item"><a href="../index.html"><img src="../images/logofriki.png" alt="Friki Discos" class="friki__logo"></a></li>
+                <li class="barraNavegacion__item"><a href="blog.html">BLOG</a></li>
+                <li class="barraNavegacion__item barraNavegacion__item--activo"><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="main__contacto">
+                <div class="contacto__titulo">
+                    <h1 class="contacto__titulo__texto">Contacto</h1>
+                </div>
+                <div class="contacto__contenido">
+                    <p>Contactanos a través de nuestras redes sociales</p>
+                    <div class="contacto__redes">
+                        <p class="fab fa-facebook"></p>
+                        <p class="fab fa-instagram"></p>
+                        <p class="fab fa-tiktok"></p>
+                    </div>
+                    <p>o dejanos tus datos y tu consulta abajo y nos contactamos con vos:</p>
+                    <fieldset>
+                        <legend>
+                            <form action="">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" id="nombre">
+                                <br>
+                                <label for="Apellido">Apellido</label>
+                                <input type="text" id="apellido">
+                                <br>
+                                <label for="email">Email</label>
+                                <input type="text" id="email">
+                                <br>
+                                <label for="tipoconsulta">Tipo de consulta</label>
+                                <select name="tipoconsulta" id="tipoconsulta">
+                                    <option value="stock">Stock de un disco</option>
+                                    <option value="envios">Envíos</option>
+                                    <option value="compra">Información de tu compra</option>
+                                    <option value="encargue">Discos por encargue</option>
+                                    <option value="Otras consultas">Otras consultas</option>
+                                </select>
+                                <br>
+                                <label for="consulta">Consulta</label>
+                                <br>
+                                <textarea name="consulta" id="consulta" cols="30" rows="10"></textarea>
+                                <br>
+                                <label for="newsletter">Suscribirme al newsletter</label>
+                                <input type="checkbox">
+                                <br>
+                                <input type="reset" value="Borrar">
+                                <input type="submit" value="Enviar">
+                            </form>
+                        </legend>
+                    </fieldset>
+                    </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer">
+                <div class="footerNewsletter">
+                    <h3 class="footer__titulo">Suscribite a nuestro newsletter</h3>
+                    <form class="footer__newsletter" action="">
+                        <input type="text" class="footer__newsletter__campo" placeholder="nombre@email.com">
+                        <input type="submit" class="footer__newsletter__boton" value="Suscribirme">
+                    </form>
+                </div>
+                <div class="footerRedes">
+                    <h3 class="footer__titulo">Seguinos</h3>
+                    <ul class="footer__redes">
+                        <li class="footer__redes__item"><a href="https://facebook.com/frikidiscos"><p class="fab fa-facebook"></p></a></li>
+                        <li class="footer__redes__item"><a href="https://instagram/frikidiscos"><p class="fab fa-instagram"></p></a></li>
+                        <li class="footer__redes__item"><a href="https://tiktok.com/@frikidiscos"><p class="fab fa-tiktok"></p></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+</body>
+</html>
