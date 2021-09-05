@@ -669,8 +669,20 @@ position:relative;
     font-size: 30px;
 }
 /* MEDIA QUERIES */
-
 @media only screen and (min-width: 600px){
+    #grilla {
+        display: grid;
+        grid-template-rows: 10vh 60vh 500px 1fr 70vh 15vh;
+        grid-template-areas: "header"
+                             "destacado"
+                             "categorias"
+                             "novedades"
+                             "comprar"
+                             "footer";
+    }
+}
+
+@media only screen and (min-width: 768px){
     
 #grilla {
     display: grid;
