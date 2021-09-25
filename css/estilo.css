@@ -640,7 +640,7 @@ position:relative;
    }
 .main__contacto {
     grid-area: main;
-    height:60vh;
+    height:120vh;
     display: flex;
     flex-direction: column;
     padding-bottom: 5vh;
@@ -668,6 +668,12 @@ position:relative;
 .contacto__redes {
     font-size: 30px;
 }
+
+label {
+    font-size: 1rem;
+}
+
+
 /* MEDIA QUERIES */
 @media only screen and (min-width: 600px){
     #grilla {
@@ -821,7 +827,7 @@ position:relative;
    }
 .grilla__contacto {
     display: grid;
-    grid-template-rows: 10vh 75vh 15vh;
+    grid-template-rows: 10vh 125vh 15vh;
     grid-template-areas: "header"
                          "main"
                          "footer";

@@ -5,11 +5,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://kit.fontawesome.com/815a8cfff1.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="../css/estilo.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/pruebacss.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/estilo.css">
         <title>Friki Discos - Contacto</title>
     </head>
 <body>
@@ -29,47 +31,61 @@
                     <h1 class="contacto__titulo__texto">Contacto</h1>
                 </div>
                 <div class="contacto__contenido">
-                    <p>Contactanos a través de nuestras redes sociales</p>
-                    <div class="contacto__redes">
-                        <p class="fab fa-facebook"></p>
-                        <p class="fab fa-instagram"></p>
-                        <p class="fab fa-tiktok"></p>
+                    <div class="container">
+                        <p>Contactanos a través de nuestras redes sociales</p>
+                        <div class="contacto__redes">
+                            <p class="fab fa-facebook"></p>
+                            <p class="fab fa-instagram"></p>
+                            <p class="fab fa-tiktok"></p>
+                        </div>
+                        <p>o dejanos tus datos y tu consulta abajo y nos contactamos con vos:</p>
+                        <div>
+                            <fieldset>
+                                <legend>
+                                    <form action="">
+                                        <div class="row">
+                                            <div class="col">
+                                                <label for="nombre" class="form-label">Nombre</label>
+                                                <input type="text" id="nombre" class="form-control"> 
+                                            </div>
+                                            <div class="col">
+                                                <label for="Apellido" class="form-label">Apellido</label>
+                                                <input type="text" id="apellido" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <label for="email" class="form-label">Email</label>
+                                                <input type="email" id="email" class="form-control" placeholder="name@example.com">
+                                            </div>
+                                            <div class="col">
+                                                <label for="tipoconsulta"  class="form-label">Tipo de consulta</label>
+                                            <select id="tipoconsulta" class="form-select form-select-sm" aria-label="tipo de consulta">
+                                                <option selected>Stock de un disco</option>
+                                                <option value="envios">Envíos</option>
+                                                <option value="compra">Compra</option>
+                                                <option value="encargue">Encargue</option>
+                                                <option value="otras">Otras consultas</option>
+                                            </select>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="consulta"  class="form-label">Consulta</label>
+                                            <textarea name="consulta" id="consulta" cols="30" rows="10" class="form-control" placeholder="Dejanos tu consulta"></textarea>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" value="" id="subscripcionNewsletter" checked="">
+                                            <label class="form-check-label" for="subscripcionNewsletter">Subscribirse al newsletter</label>
+                                        </div>
+                                        <div>
+                                            <input type="reset" value="Borrar">
+                                            <input type="submit" value="Enviar">
+                                    </form>
+                                </legend>
+                            </fieldset>
+                        </div>
                     </div>
-                    <p>o dejanos tus datos y tu consulta abajo y nos contactamos con vos:</p>
-                    <fieldset>
-                        <legend>
-                            <form action="">
-                                <label for="nombre">Nombre</label>
-                                <input type="text" id="nombre">
-                                <br>
-                                <label for="Apellido">Apellido</label>
-                                <input type="text" id="apellido">
-                                <br>
-                                <label for="email">Email</label>
-                                <input type="text" id="email">
-                                <br>
-                                <label for="tipoconsulta">Tipo de consulta</label>
-                                <select name="tipoconsulta" id="tipoconsulta">
-                                    <option value="stock">Stock de un disco</option>
-                                    <option value="envios">Envíos</option>
-                                    <option value="compra">Información de tu compra</option>
-                                    <option value="encargue">Discos por encargue</option>
-                                    <option value="Otras consultas">Otras consultas</option>
-                                </select>
-                                <br>
-                                <label for="consulta">Consulta</label>
-                                <br>
-                                <textarea name="consulta" id="consulta" cols="30" rows="10"></textarea>
-                                <br>
-                                <label for="newsletter">Suscribirme al newsletter</label>
-                                <input type="checkbox">
-                                <br>
-                                <input type="reset" value="Borrar">
-                                <input type="submit" value="Enviar">
-                            </form>
-                        </legend>
-                    </fieldset>
-                    </div>
+                </div>
             </div>
         </main>
         <footer>
@@ -93,6 +109,7 @@
         </footer>
     </div>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script>
     AOS.init();
   </script>
