@@ -31,6 +31,9 @@ a {
                          "footer";
 }
 
+.barra {
+    background-color: black;
+}
 
 .navegador {
     grid-area: header;
@@ -74,6 +77,10 @@ a {
 }
 .friki__logo {
     height: 8vh;
+}
+.friki__logo-bt {
+    width: 120px;
+    height: auto;
 }
 .boton {
     height: 40px;

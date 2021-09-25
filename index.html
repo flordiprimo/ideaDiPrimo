@@ -16,7 +16,36 @@
 </head>
 <body>
     <div id="grilla">
-        <nav class="navegador">
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color: black;">
+            <a class="navbar-brand" href="index.html"><img src="images/logofriki.png" alt="Friki Discos" class="friki__logo-bt"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">HOME<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pages/catalogo.html">CATÁLOGO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/comocomprar.html">CÓMO COMPRAR</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/blog.html">BLOG</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/contacto.html">CONTACTO</a>
+                  </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Buscar discos" aria-label="Buscar">
+                <button class="btn btn-light my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+        <!--<nav class="navegador">
             <ul class="barraNavegacion">
                 <li class="barraNavegacion__item"><a href="pages/catalogo.html">CATÁLOGO</a></li>
                 <li class="barraNavegacion__item"><a href="pages/comocomprar.html">CÓMO<br>COMPRAR</a></li>
@@ -24,7 +53,7 @@
                 <li class="barraNavegacion__item"><a href="pages/blog.html">BLOG</a></li>
                 <li class="barraNavegacion__item"><a href="pages/contacto.html">CONTACTO</a></li>
             </ul>
-        </nav>
+        </nav>-->
         <section class="destacado">
             <div class="destacado__texto"><p class="etiquetaSeccion">Disco del mes - rama nueva</p></div>
             <div class="destacado__titulo"><h2><span>The Velvet Underground<br>& Nico</span></h2></div>
@@ -57,7 +86,7 @@
                     <img src="images/Blur-blur.jpeg" alt="Blur-blur" class="fotoNovedades">
                     <h3 class="novedades__producto__nombre">Blur - Blur</h3>
                     <p class="novedades__producto__descripcion">Vinilo 12' (nuevo y sellado)</p>
-                    <p class="precio">$5000</p>
+                    <p class="precio">$5000 <span class="badge bg-dark text-light">OFERTA</span></p>
                 <div><a class="masinfo" href="/pages/contacto.html">MÁS INFO</a></div>
                 </div>
                 <div class="novedades__todos__producto"  data-aos="fade-up" data-aos-anchor-placement="top-bottom">
@@ -71,7 +100,7 @@
                     <img src="images/daft-punk-ram.png" alt="daft-punk-ram" class="fotoNovedades">                    
                     <h3 class="novedades__producto__nombre">Daft Punk - Random Access Memories</h3>
                     <p class="novedades__producto__descripcion">Vinilo 12' (nuevo y sellado)</p>
-                    <p class="precio">$5000</p>
+                    <p class="precio">$5000 <span class="badge bg-dark text-light">OFERTA</span></p>
                     <div"><a class="masinfo" href="/pages/contacto.html">MÁS INFO</a>
                 </div>                  
                 <div class="novedades__todos__producto" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
