@@ -640,7 +640,7 @@ position:relative;
    }
 .main__contacto {
     grid-area: main;
-    height:120vh;
+    height:75vh;
     display: flex;
     flex-direction: column;
     padding-bottom: 5vh;
@@ -670,6 +670,9 @@ position:relative;
 }
 
 label {
+    font-size: 1rem;
+}
+select {
     font-size: 1rem;
 }
 
@@ -827,7 +830,7 @@ label {
    }
 .grilla__contacto {
     display: grid;
-    grid-template-rows: 10vh 125vh 15vh;
+    grid-template-rows: 10vh 75vh 15vh;
     grid-template-areas: "header"
                          "main"
                          "footer";
@@ -852,162 +855,3 @@ label {
     width: 100%;
 }
 }
-
-/* duplico codigo abajo para usar en los media queries
-
-#grilla {
-    display: grid;
-    grid-template-rows: 10vh 40vh 1fr 15vh;
-    height: 130vh;
-    grid-template-areas: "header"
-                         "destacado"
-                         "novedades"
-                         "footer";
-}
-h2 {
-    color: #ff66c4;
-    padding-top: 3vh;
-}
-.navegador {
-    grid-area: header;
-    background-color: black;
-    width: 100%;
-    position: sticky;
-    top: 0px;
-    height: 10vh;
-}
-.barraNavegacion {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    color: white;
-    list-style-type: none;
-    height: 100%;
-}
-.barraNavegacion__item {
-    width: 15%;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.barraNavegacion__item a {
-    color: white;
-}
-.barraNavegacion__item--logo {
-    text-align: left;
-    width: 8%;
-}
-.boton--rosa {
-    margin-top: 2vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 40px;
-    width: 100px;
-    background-color: #ff66c4;
-}
-.boton--rosa a {
-    color: white;
-    font-weight: 700;
-}
-.boton--rosa--chico {
-    font-size: 12px;
-    height: 20px;
-    width: 80px;
-    margin-top: 1vh;
-}
-.precio {
-    font-weight: 700;
-    line-height: 40px;
-}
-.fotoProducto--250px {
-    width: 250px;
-    height: 250px;
-}
-.footer {
-    background-color: black;
-    color: white;
-    height: 15vh;
-    grid-area: footer;
-    display: flex;
-    flex-direction: row;
-}
-.footer__nav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items:flex-start;
-}
-.footer__nav li {
-    list-style-type: none;
-}
-.footer__nav a {
-    color: white;
-}
-.footer__nav__friki {
-    width: 8%;
-    padding-top: 1vh;
-}
-.footer__nav__item {
-    width: 7%;
-    padding-top: 1.5vh;
-    padding-left: 1vw;
-}
-.footer__nav__newsletter {
-    width: 20%;
-    padding-top: 1.5vh;
-    padding-left: 1vw;
-    font-weight: 700;
-    font-size: 2.3vh;
-}
-.iconosRedes {
-    padding-top: 1vh;
-    padding-right: .5vw;
-}
-
-.destacado {
-    grid-area: destacado;
-    background-color: lightslategray;
-    display: flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items: center;
-    text-align: center;
-}
-.destacado__texto {
-    color: white;
-    width: 50%;
-}
-.destacado__texto--titulo {
-    font-size: 4vw;
-}
-.destacado__texto--descripcion {
-    font-size: 100%;
-}
-.novedades {
-    background-color: white;
-    grid-area: novedades;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100vw;
-}
-.novedades__titulo {
-    width: 75%;
-}
-.novedades__todos {
-    width: 75%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding-bottom: 3vh;
-}
-.novedades__todos__producto {
-    margin-top: 3vh;
-    width: 250px;
-}
-*/
-
