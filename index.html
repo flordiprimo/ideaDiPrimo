@@ -4,150 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/815a8cfff1.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/pruebacss.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/estilo.css">
     <title>Friki Discos</title>
 </head>
 <body>
-    <div id="grilla">
-        <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color: black;">
-            <a class="navbar-brand" href="index.html"><img src="images/logofriki.png" alt="Friki Discos" class="friki__logo-bt"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="index.html">HOME<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="pages/catalogo.html">CATÁLOGO</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="pages/comocomprar.html">CÓMO COMPRAR</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="pages/blog.html">BLOG</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="pages/contacto.html">CONTACTO</a>
-                  </li>
-              </ul>
-              <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Buscar discos" aria-label="Buscar">
-                <button class="btn btn-light my-2 my-sm-0" type="submit">Search</button>
-              </form>
-            </div>
-          </nav>
-        <!--<nav class="navegador">
-            <ul class="barraNavegacion">
-                <li class="barraNavegacion__item"><a href="pages/catalogo.html">CATÁLOGO</a></li>
-                <li class="barraNavegacion__item"><a href="pages/comocomprar.html">CÓMO<br>COMPRAR</a></li>
-                <li class="barraNavegacion__item"><a href="index.html"><img src="images/logofriki.png" alt="Friki Discos" class="friki__logo"></a></li>
-                <li class="barraNavegacion__item"><a href="pages/blog.html">BLOG</a></li>
-                <li class="barraNavegacion__item"><a href="pages/contacto.html">CONTACTO</a></li>
-            </ul>
-        </nav>-->
-        <section class="destacado">
-            <div class="destacado__texto"><p class="etiquetaSeccion">Disco del mes - rama nueva</p></div>
-            <div class="destacado__titulo"><h2><span>The Velvet Underground<br>& Nico</span></h2></div>
-            <div class="destacado__descripcion"><p><span>The Velvet Underground & Nico es el primer álbum de estudio de la banda estadounidense The Velvet Underground, lanzado en 1967 con la colaboración en las voces de la cantante alemana Nico.</span></p></div>
-            <div>
-                <a href="pages/destacado.html" class="vermas">Ver Más</a></div>
-        </section>
-        <section class="categorias">
-            <div class="scroll">
-                <div class="fas fa-chevron-down"></div>
-            </div>
-            <div class="categorias__titulo">
-                <h2 class="categorias__titulo__texto">Formatos</h2>
-            </div>
-            <div class="categorias__formatos">
-                <div class="vinilos" data-aos="fade-up">
-                    <a href="/pages/catalogo.html"><img src="images/vinilo.png" alt="vinilos" class="vinilos__imagen">
-                    <h2 class="vinilos__texto">Vinilos</h2></a>
-                </div>
-                <div class="cd" data-aos="fade-up" >
-                    <a href="/pages/catalogo.html"><img src="images/cds.png" alt="cds" class="cds__imagen">
-                        <h2 class="vinilos__texto">CD</h2></a>
-                    </div>
-            </div>
-        </section>
-        <section class="novedades">
-            <div class="novedades__titulo"><h2 class="novedades__titulo__texto">Novedades</h2></div>
-            <div class="novedades__todos">
-                <div class="novedades__todos__producto" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                    <img src="images/Blur-blur.jpeg" alt="Blur-blur" class="fotoNovedades">
-                    <h3 class="novedades__producto__nombre">Blur - Blur</h3>
-                    <p class="novedades__producto__descripcion">Vinilo 12' (nuevo y sellado)</p>
-                    <p class="precio">$5000 <span class="badge bg-dark text-light">OFERTA</span></p>
-                <div><a class="masinfo" href="/pages/contacto.html">MÁS INFO</a></div>
-                </div>
-                <div class="novedades__todos__producto"  data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                    <img src="images/arcade-fire-neon-bible.jpeg" alt="arcade-fire-neon-bible" class="fotoNovedades"></a>
-                    <h3 class="novedades__producto__nombre">Arcade Fire - Neon Bible</h3>
-                    <p class="novedades__producto__descripcion">Vinilo 12' (nuevo y sellado)</p>
-                    <p class="precio">$5000</p>
-                    <div><a class="masinfo" href="/pages/contacto.html">MÁS INFO</a></div>                   
-                </div>
-                <div class="novedades__todos__producto"  data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                    <img src="images/daft-punk-ram.png" alt="daft-punk-ram" class="fotoNovedades">                    
-                    <h3 class="novedades__producto__nombre">Daft Punk - Random Access Memories</h3>
-                    <p class="novedades__producto__descripcion">Vinilo 12' (nuevo y sellado)</p>
-                    <p class="precio">$5000 <span class="badge bg-dark text-light">OFERTA</span></p>
-                    <div"><a class="masinfo" href="/pages/contacto.html">MÁS INFO</a>
-                </div>                  
-                <div class="novedades__todos__producto" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                    <img src="images/diiv-is-the-is-are.jpeg" alt="diiv-is-the-is-are" class="fotoNovedades">                    
-                    <h3 class="novedades__producto__nombre">DIIV - Is The Is Are</h3>
-                    <p class="novedades__producto__descripcion">Vinilo 12' (nuevo y sellado)</p>
-                    <p class="precio">$5000</p>
-                    <div><a class="masinfo" href="/pages/contacto.html">MÁS INFO</a></div>                  
-                </div>
-            </div>
-        </section>
-        <section class="comprar">
-            <div class="comprar__titulo">
-                <h2 class="comprar__titulo__texto">CÓMO COMPRAR</h2>
-            </div>
-            <div class="comprar__contenido">
-                <div class="comprar__contenido__imagen"><img src="images/ilus_comprar.png" alt="ilustración persona con discos" class="comprar__ilus" data-aos="fade-up" data-aos-anchor-placement="top-bottom"></div>
-                <div class="comprar__contenido__texto">
-                    <p class="comprar__parrafo" data-aos="fade-up" data-aos-anchor-placement="top-bottom">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat voluptatem harum quisquam suscipit nobis corporis rerum quidem.</p>
-                    <a href="" class="masinfo comprar__parrafo" data-aos="fade-up" data-aos-anchor-placement="top-bottom">Mas info</a>
-                </div>
-            </div>
-        </section>
-        <footer>
-            <div class="footer">
-                <div class="footerNewsletter">
-                    <h3 class="footer__titulo">Suscribite a nuestro newsletter</h3>
-                    <form class="footer__newsletter" action="">
-                        <input type="text" class="footer__newsletter__campo" placeholder="nombre@email.com">
-                        <input type="submit" class="footer__newsletter__boton" value="Suscribirme">
-                    </form>
-                </div>
-                <div class="footerRedes">
-                    <h3 class="footer__titulo">Seguinos</h3>
-                    <ul class="footer__redes">
-                        <li class="footer__redes__item"><a href="https://facebook.com/frikidiscos"><p class="fab fa-facebook"></p></a></li>
-                        <li class="footer__redes__item"><a href="https://instagram/frikidiscos"><p class="fab fa-instagram"></p></a></li>
-                        <li class="footer__redes__item"><a href="https://tiktok.com/@frikidiscos"><p class="fab fa-tiktok"></p></a></li>
-                    </ul>
-                </div>
-            </div>
-        </footer>
-    </div>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script>
-        AOS.init();
-      </script>
+
 </body>
 </html>
