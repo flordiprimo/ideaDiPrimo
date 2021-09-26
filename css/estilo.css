@@ -44,6 +44,9 @@ a {
     height: 10vh;
     z-index: 100;
 }
+.navegador-bs {
+    grid-area: header;
+}
 .barraNavegacion {
     display: flex;
     flex-direction: row;
