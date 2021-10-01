@@ -4,150 +4,214 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/815a8cfff1.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/pruebacss.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/estilo.css">
+    <script src="https://kit.fontawesome.com/815a8cfff1.js" crossorigin="anonymous"></script>
     <title>Friki Discos</title>
 </head>
 <body>
-    <div id="grilla">
-        <div class="navegador-bs">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="#">Navbar</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Dropdown
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
-                      </li>
-                    </ul>
-                    <form class="d-flex">
-                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                      <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-black">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logofriki.png" alt="Friki Discos" width="100" height="auto">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbar">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active nav-friki-item nav-friki-item-active">
+                  <a class="nav-link" href="index.html">HOME<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item nav-friki-item">
+                    <a class="nav-link" href="pages/destacado.html">DESTACADO</a>
+                  </li>
+                <li class="nav-item nav-friki-item">
+                  <a class="nav-link" href="pages/catalogo.html">CATÁLOGO</a>
+                </li>
+                <li class="nav-item nav-friki-item">
+                    <a class="nav-link" href="pages/comocomprar.html">CÓMO COMPRAR</a>
+                </li>
+                <li class="nav-item nav-friki-item">
+                    <a class="nav-link" href="pages/blog.html">BLOG</a>
+                </li>
+                <li class="nav-item nav-friki-item">
+                    <a class="nav-link" href="pages/contacto.html">CONTACTO</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control-sm mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+                <a class="text-white lead"><i class="fas fa-search lupa"></i></a>
+              </form>
+            </div>
+          </nav>
+          <section id="destacado">
+              <div class="container-fluid">
+                <div>
+                    <h4><span class="volanta__texto bg-black">DISCO DEL MES</span></h4>
+                </div>
+                <div>
+                    <h2><span class="destacado__titulo bg-uno">THE VELVET UNDERGROUND &&nbsp;NICO</span></h2>
+                </div>
+                <div>
+                    <p><span class="destacado__descripcion bg-white">The Velvet Underground & Nico es el primer álbum de estudio de la banda estadounidense The Velvet Underground, lanzado en 1967 con la colaboración en las voces de la cantante alemana Nico.</span></p>
+                </div>
+                <a href="pages/destacado.html"><button class="btn bg-black text-white">MAS INFO</button></a>
+              </div>
+          </section>
+          <section id="formatos">
+              <h2><span class="sectionTitle bg-black">FORMATOS</span></h2>
+              <div class="container-fluid">
+                <div class="row" id="formatos">
+                  <div class="col-12 col-sm-12 col-md-4 col-lg-4 colxl-4" id="formatos-vinilos">
+                    <a href="index.html">
+                      <div class="categoriaBlock d-flex justify-content-center align-items-center">
+                        <h2><span class="bg-black">VINILOS</span></h2>
+                      </div>
+                    </a>
+                    </div>
+                  <div class="col-12 col-sm-12 col-md-4 col-lg-4 colxl-4"  id="formatos-cds">
+                    <a href="index.html">
+                      <div class="categoriaBlock d-flex justify-content-center align-items-center">
+                        <h2><span class="bg-black">CDs</span></h2>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-4 col-lg-4 colxl-4" id="formatos-cassettes">
+                    <a href="index.html">
+                      <div class="categoriaBlock d-flex justify-content-center align-items-center">
+                        <h2><span class="bg-black">CASSETTES</span></h2>
+                      </div>
+                    </a>
                   </div>
                 </div>
-              </nav>
-        </div>
-        <section class="destacado">
-            <div class="destacado__texto"><p class="etiquetaSeccion">Disco del mes</p></div>
-            <div class="destacado__titulo"><h2><span>The Velvet Underground<br>& Nico</span></h2></div>
-            <div class="destacado__descripcion"><p><span>The Velvet Underground & Nico es el primer álbum de estudio de la banda estadounidense The Velvet Underground, lanzado en 1967 con la colaboración en las voces de la cantante alemana Nico.</span></p></div>
-            <div>
-                <a href="pages/destacado.html" class="vermas">Ver Más</a></div>
-        </section>
-        <section class="categorias">
-            <div class="scroll">
-                <div class="fas fa-chevron-down"></div>
-            </div>
-            <div class="categorias__titulo">
-                <h2 class="categorias__titulo__texto">Formatos</h2>
-            </div>
-            <div class="categorias__formatos">
-                <div class="vinilos" data-aos="fade-up">
-                    <a href="/pages/catalogo.html"><img src="images/vinilo.png" alt="vinilos" class="vinilos__imagen">
-                    <h2 class="vinilos__texto">Vinilos</h2></a>
-                </div>
-                <div class="cd" data-aos="fade-up" >
-                    <a href="/pages/catalogo.html"><img src="images/cds.png" alt="cds" class="cds__imagen">
-                        <h2 class="vinilos__texto">CD</h2></a>
+              </div>
+              
+          </section>
+          <section id="novedades">
+              <h2><span class="sectionTitle bg-black">NOVEDADES</span></h2>
+              <div class="contenedor__novedades">
+                <div class="row" id="novedades__productos">
+                  <div class="col-12 col-sm-12 col-md-6 col-lg-3 colxl-3">
+                      <img src="images/Blur-blur.jpeg" alt="Blur-blur" class="img-fluid">
+                      <h3 class="novedades__producto__nombre text-white"><span class="bg-black">Blur - Blur</span></h3>
+                      <p class="novedades__producto__descripcion">Vinilo 12' (nuevo y sellado)</p>
+                      <p class="precio">$5000 <span class="badge bg-uno text-black">OFERTA</span></p>
+                      <div>
+                        <a href="pages/contacto.html"><button type="button" class="btn btn-friki">MÁS INFO</button></a>
+                      </div>
                     </div>
+                  <div class="col-12 col-sm-12 col-md-6 col-lg-3 colxl-3">
+                      <img src="images/arcade-fire-neon-bible.jpeg" alt="arcade-fire-neon-bible" class="img-fluid">
+                      <h3 class="novedades__producto__nombre text-white"><span class="bg-black">Arcade Fire - Neon Bible</span></h3>
+                      <p class="novedades__producto__descripcion">Vinilo 12' (nuevo y sellado)</p>
+                      <p class="precio">$5000</p>
+                      <div>
+                        <a href="pages/contacto.html"><button type="button" class="btn btn-friki">MÁS INFO</button></a>
+                      </div>                   
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-6 col-lg-3 colxl-3">
+                    <img src="images/daft-punk-ram.png" alt="daft-punk-ram" class="img-fluid">
+                      <h3 class="novedades__producto__nombre text-white"><span class="bg-black">Daft Punk - Random Access Memories</span></h3>
+                      <p class="novedades__producto__descripcion">Vinilo 12' (nuevo y sellado)</p>
+                      <p class="precio">$5000 <span class="badge bg-uno text-black">OFERTA</span></p>
+                      <div>
+                        <a href="pages/contacto.html"><button type="button" class="btn btn-friki">MÁS INFO</button></a>
+                      </div> 
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-6 col-lg-3 colxl-3">
+                    <img src="images/diiv-is-the-is-are.jpeg" alt="diiv-is-the-is-are" class="img-fluid">
+                      <h3 class="novedades__producto__nombre text-white"><span class="bg-black">DIIV - Is The Is Are</span></h3>
+                      <p class="novedades__producto__descripcion">Vinilo 12' (nuevo y sellado)</p>
+                      <p class="precio">$5000</p>
+                        <a href="pages/contacto.html"><button type="button" class="btn btn-friki">MÁS INFO</button></a>
+                      </div> 
+                  </div>
+              </div>   
+            </div>     
+          </section>
+          <section id="comoComprar">
+            <h2><span class="sectionTitle bg-black">CÓMO COMPRAR</span></h2>
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 colxl-6">
+                  <img src="images/ilus_comprar.png" alt="ilustracion de una perosona pinchando vinilos" class="img-fluid">
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 colxl-6">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat voluptatem harum quisquam suscipit nobis corporis rerum quidem.</p>
+                  <a href="pages/contacto.html"><button type="button" class="btn btn-friki">MÁS INFO</button></a>
+                </div> 
             </div>
-        </section>
-        <section class="novedades">
-            <div class="novedades__titulo"><h2 class="novedades__titulo__texto">Novedades</h2></div>
-            <div class="novedades__todos">
-                <div class="novedades__todos__producto" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                    <img src="images/Blur-blur.jpeg" alt="Blur-blur" class="fotoNovedades">
-                    <h3 class="novedades__producto__nombre">Blur - Blur</h3>
-                    <p class="novedades__producto__descripcion">Vinilo 12' (nuevo y sellado)</p>
-                    <p class="precio">$5000 <span class="badge bg-dark text-light">OFERTA</span></p>
-                <div><a class="masinfo" href="/pages/contacto.html">MÁS INFO</a></div>
+          </div>
+          </section>
+          <footer class="page-footer font-small bg-black pt-4 text-white">
+            <div class="container-fluid text-center text-md-left">
+              <div class="row">
+                <div class="col-md-3">
+                  <img src="images/logofriki.png" alt="friki discos" width="100px">
+                  <p>Friki Discos busca ser más que una tienda de música Indie, queremos ser un delivery de emociones. Te llevamos, estés donde estés, la música que te gusta. </p>
                 </div>
-                <div class="novedades__todos__producto"  data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                    <img src="images/arcade-fire-neon-bible.jpeg" alt="arcade-fire-neon-bible" class="fotoNovedades"></a>
-                    <h3 class="novedades__producto__nombre">Arcade Fire - Neon Bible</h3>
-                    <p class="novedades__producto__descripcion">Vinilo 12' (nuevo y sellado)</p>
-                    <p class="precio">$5000</p>
-                    <div><a class="masinfo" href="/pages/contacto.html">MÁS INFO</a></div>                   
+                <div class="col-md-3 mb-3">
+                  <h5>Buscá discos</h5>
+                  <form class="form-inline">
+                    <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Buscar"
+                      aria-label="Buscar">
+                    <i class="fas fa-search lupa" aria-hidden="true"></i>
+                  </form>
+                  <h5>Suscribite a nuestro newsletter</h5>
+                  <form class="input-group">
+                    <input type="text" class="form-control form-control-sm" placeholder="Tu email"
+                      aria-label="Tu email" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-friki-footer my-0" type="button">Subscribirme</button>
+                    </div>
+                  </form>
                 </div>
-                <div class="novedades__todos__producto"  data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                    <img src="images/daft-punk-ram.png" alt="daft-punk-ram" class="fotoNovedades">                    
-                    <h3 class="novedades__producto__nombre">Daft Punk - Random Access Memories</h3>
-                    <p class="novedades__producto__descripcion">Vinilo 12' (nuevo y sellado)</p>
-                    <p class="precio">$5000 <span class="badge bg-dark text-light">OFERTA</span></p>
-                    <div"><a class="masinfo" href="/pages/contacto.html">MÁS INFO</a>
-                </div>                  
-                <div class="novedades__todos__producto" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                    <img src="images/diiv-is-the-is-are.jpeg" alt="diiv-is-the-is-are" class="fotoNovedades">                    
-                    <h3 class="novedades__producto__nombre">DIIV - Is The Is Are</h3>
-                    <p class="novedades__producto__descripcion">Vinilo 12' (nuevo y sellado)</p>
-                    <p class="precio">$5000</p>
-                    <div><a class="masinfo" href="/pages/contacto.html">MÁS INFO</a></div>                  
+                <div class="col-md-3 mb-md-0 text-center">
+                  <a href="index.html"><h5>FRIKI HOME</h5></a>
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="pages/destacado.html">Destacado</a>
+                    </li>
+                    <li>
+                      <a href="pages/catalogo.html">Catálogo</a>
+                    </li>
+                    <li>
+                      <a href="pages/comocomprar.html">Cómo comprar</a>
+                    </li>
+                    <li>
+                      <a href="pages/blog.html">Blog</a>
+                    </li>
+                    <li>
+                      <a href="pages/contacto.html">Contacto</a>
+                    </li>
+                  </ul>
                 </div>
+                <div class="col-12 col-md-3 text-center">
+                  <h5>SEGUINOS</h5>
+                    <div class="mb-3 flex-center">
+                      <a class="fb-ic" href="https://www.facebook.com/frikidiscos">
+                        <i class="fab fa-facebook-f fa-lg white-text mr-md-3 fa-2x"> </i>
+                      </a>
+                      <a class="ins-ic" href="https://www.instagram.com/frikidiscos">
+                        <i class="fab fa-instagram fa-lg white-text mr-md-3 fa-2x"> </i>
+                      </a>
+                      <a class="tiktok-ic" href="https://www.tiktok.com/@frikidiscos">
+                        <i class="fab fa-tiktok fa-lg white-text mr-md-3 fa-2x"> </i>
+                      </a>
+                </div>
+              </div>
             </div>
-        </section>
-        <section class="comprar">
-            <div class="comprar__titulo">
-                <h2 class="comprar__titulo__texto">CÓMO COMPRAR</h2>
             </div>
-            <div class="comprar__contenido">
-                <div class="comprar__contenido__imagen"><img src="images/ilus_comprar.png" alt="ilustración persona con discos" class="comprar__ilus" data-aos="fade-up" data-aos-anchor-placement="top-bottom"></div>
-                <div class="comprar__contenido__texto">
-                    <p class="comprar__parrafo" data-aos="fade-up" data-aos-anchor-placement="top-bottom">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat voluptatem harum quisquam suscipit nobis corporis rerum quidem.</p>
-                    <a href="" class="masinfo comprar__parrafo" data-aos="fade-up" data-aos-anchor-placement="top-bottom">Mas info</a>
-                </div>
+            <div class="footer-copyright text-center py-3 bg-uno text-black">© 2021 Copyright:
+              Friki Discos
             </div>
-        </section>
-        <footer>
-            <div class="footer">
-                <div class="footerNewsletter">
-                    <h3 class="footer__titulo">Suscribite a nuestro newsletter</h3>
-                    <form class="footer__newsletter" action="">
-                        <input type="text" class="footer__newsletter__campo" placeholder="nombre@email.com">
-                        <input type="submit" class="footer__newsletter__boton" value="Suscribirme">
-                    </form>
-                </div>
-                <div class="footerRedes">
-                    <h3 class="footer__titulo">Seguinos</h3>
-                    <ul class="footer__redes">
-                        <li class="footer__redes__item"><a href="https://facebook.com/frikidiscos"><p class="fab fa-facebook"></p></a></li>
-                        <li class="footer__redes__item"><a href="https://instagram/frikidiscos"><p class="fab fa-instagram"></p></a></li>
-                        <li class="footer__redes__item"><a href="https://tiktok.com/@frikidiscos"><p class="fab fa-tiktok"></p></a></li>
-                    </ul>
-                </div>
-            </div>
-        </footer>
-    </div>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+          </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script>
-        AOS.init();
-      </script>
 </body>
 </html>

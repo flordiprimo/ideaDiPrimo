@@ -1,0 +1,220 @@
+$colorBlack: black;
+$colorUno: #ff66c4;
+$colorDos: #77d0b8;
+$colorWhite: white;
+
+$colores: ("black",$colorBlack), ("uno",$colorUno), ("dos",$colorDos), ("white",$colorWhite);
+
+@each $color in $colores {
+    .bg-#{nth($color,1)} {
+        background-color: nth($color,2);
+    }
+    .text-#{nth($color,1)}{
+        color: nth($color,2);
+    }
+}
+
+@mixin fontstyling($fontFamily, $fontWeight, $fontSize, $fontColor,$padding) {
+    font-family: $fontFamily;
+    font-weight: $fontWeight;
+    font-size: $fontSize;
+    color: $fontColor;
+    padding: $padding;
+}
+
+@mixin transparentBackgroundColor($alpha,$color) {
+    background-color: rgba(red($color), green($color), blue($color), $alpha);
+  }
+
+.btn-friki {
+    @extend .bg-black;
+    @extend .text-white;
+    font-weight: 500;
+    transition-duration: 0.25s;
+    margin-bottom: 20px;
+    &:hover {
+        background-color: $colorUno;
+        font-weight: 500;
+        transition-duration: 0.25s;
+    }
+}
+
+#navbar {
+    .nav-friki-item {
+        a {
+            @include fontstyling('Roboto',400,1rem ,$colorWhite,20px);
+            &:hover {
+            color: $colorUno;
+        }
+        }
+    }
+    .nav-friki-item-active {
+        border-bottom: solid 3px $colorUno;
+        a {
+            @include fontstyling('Roboto',500,1rem ,$colorWhite,20px);
+        }
+        
+    }
+    .lupa {
+        &:hover {
+            color:$colorUno;
+        }
+        &:active {
+            color: $colorDos;
+        }   
+    }
+}
+.volanta__texto {
+    @include fontstyling('Roboto',500,1rem,$colorWhite,5px);
+}      
+.destacado__titulo {
+    @include fontstyling('Roboto',900,2.8rem,$colorBlack,5px); 
+} 
+.precio {
+    @include fontstyling('Roboto',500,1.2rem,$colorBlack,0px )
+}
+#destacado {
+    background-image: url(../images/destacado_velvet.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 500px;
+    margin-bottom: 25px;
+    div {
+        margin-top: 20px;
+    }
+    .destacado__descripcion {
+        @include fontstyling('Roboto',400,1rem,$colorBlack,5px); 
+    } 
+}
+.sectionTitle {
+    @include fontstyling('Roboto',900,3rem,$colorWhite,0px 10px 0px 10px);
+    margin-top: 20px;
+}
+
+#formatos {
+    a {
+        color: $colorWhite;
+        width: 100%;
+        height:100%;
+        display: block;
+        &:hover{ 
+            color: $colorUno;
+            text-decoration: none;
+            transition-duration: 1s;
+        }
+        h2 {
+            @extend .sectionTitle;
+            font-size: 2.5rem;
+            &:hover{
+                color:$colorUno;
+                transition-duration: 1s;
+            }
+        }
+    }
+    #formatos-vinilos {
+        background-image: url(../images/vinilo.png);
+        background-size: 100%;
+        height: 300px;
+        transition-duration: 1s;
+        &:hover {
+            background-size: 120%;
+            transition-duration: 1s;
+        }
+}
+    #formatos-cds {
+        background-image: url(../images/cds.png);
+        background-size: 100%;
+        transition-duration: 1s;
+        height: 300px;
+        &:hover {
+            background-size: 120%;
+            transition-duration: 1s;
+        }
+    }
+    #formatos-cassettes {
+        background-image: url(../images/vinilo.png);
+        background-size: 100%;
+        transition-duration: 1s;
+        height: 300px;
+        &:hover {
+            background-size: 120%;
+            transition-duration: 1s;
+        }
+    }
+    .categoriaBlock {
+        display: block;
+        width: 100%;
+        height:100%;
+    }
+}
+#novedades {
+    margin-top: 20px;
+    .contenedor__novedades {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: 1rem;
+    }
+    .novedades__producto__nombre {
+        @include fontstyling('Roboto',500,1.5rem, $colorWhite, 0px);
+        margin-top: 10px;
+        span {
+            padding: 2px;
+        }
+    }
+    .novedades__producto__descripcion {
+        @include fontstyling('Roboto',400,1rem,$colorBlack,0px )
+    }
+}
+#comoComprar {
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    @include transparentBackgroundColor(0.2,$colorUno)
+}
+footer {
+    p {
+        @include fontstyling('Roboto',400,0.8rem,$colorWhite,0px)
+    }
+    h5 {
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+    .btn-friki-footer {
+        color: $colorWhite;
+        background-color: $colorUno;
+        font-weight: 500;
+        transition-duration: 0.25s;
+        margin-bottom: 20px;
+        &:hover {
+            background-color: $colorDos;
+            font-weight: 500;
+            transition-duration: 0.25s;
+            }
+        }
+        a {
+            color: $colorWhite;
+            text-decoration: none;
+            &:hover {
+                color:$colorUno;
+                text-decoration: none;
+            }
+        }
+    }
+#seccionDestacado {
+        margin-top: 20px;
+    }
+#seccionCatalogo {
+    .producto__nombre {
+     @extend .novedades__producto__nombre;
+    font-size: 1.2rem;
+    span {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    }
+
+}
