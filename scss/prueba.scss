@@ -1,10 +1,4 @@
-@import "variables.scss";
-@import "navbar.scss";
-@import "estilosHome.scss";
-@import "footer.scss";
-@import "estilosCatalogo.sccs";
-@import "estilosComunes.scss";
-@import "estilosDestacado.scss";
+@import "variables";
 
 $colores: ("black",$colorBlack), ("uno",$colorUno), ("dos",$colorDos), ("white",$colorWhite);
 
@@ -29,4 +23,9 @@ $colores: ("black",$colorBlack), ("uno",$colorUno), ("dos",$colorDos), ("white",
     background-color: rgba(red($color), green($color), blue($color), $alpha);
   }
 
-
+  @import "navbar";
+  @import "footer";
+  @import "estilosComunes";
+  @import "estilosHome";
+  @import "estilosCatalogo";
+  @import "estilosDestacado";
