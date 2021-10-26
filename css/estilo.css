@@ -113,6 +113,27 @@ footer a {
   padding: 0px 10px 0px 10px;
   margin-top: 20px; }
 
+#error {
+  min-height: 413px; }
+  #error h2 {
+    font-family: "Roboto";
+    font-weight: 900;
+    font-size: 2rem;
+    color: black;
+    padding: 0px 0px 0px 0px; }
+  #error .error__texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; }
+
+.link__texto {
+  color: #ff66c4;
+  font-weight: bold; }
+  .link__texto:hover {
+    color: #77d0b8; }
+
 #destacado {
   background-image: url(../images/destacado_velvet.png);
   background-position: center;
@@ -188,7 +209,7 @@ footer a {
   #novedades .novedades__producto__nombre, #novedades #seccionCatalogo .producto__nombre, #seccionCatalogo #novedades .producto__nombre {
     font-family: "Roboto";
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     color: white;
     padding: 0px;
     margin-top: 10px; }
@@ -206,12 +227,19 @@ footer a {
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: rgba(255, 102, 196, 0.2); }
+  #comoComprar .comoComprar__texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  #comoComprar p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 50px; }
 
 #seccionCatalogo .producto__nombre {
-  font-size: 1.2rem; }
-  #seccionCatalogo .producto__nombre span {
-    padding-left: 5px;
-    padding-right: 5px; }
+  font-size: 1.1rem;
+  min-height: 2.5rem; }
 
 #seccionDestacado {
   margin-top: 20px; }
